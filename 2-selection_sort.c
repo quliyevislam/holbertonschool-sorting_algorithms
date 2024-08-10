@@ -32,9 +32,9 @@ void selection_sort(int *array, size_t size)
 			temp = array[i];
 			array[i] = array[index_min_element];
 			array[index_min_element] = temp;
+			print_array(array, size);
 		}
 
-		print_array(array, size);
 		i++;
 	}
 }
